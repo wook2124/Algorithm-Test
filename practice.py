@@ -1,7 +1,11 @@
 import sys
-
 sys.stdin = open('input.txt', 'rt')
 
-n, m = map(int, input().split())
+n = int(input())
+li = []
 
-print(n, m)
+for _ in range(n):
+    li.append(list(map(int, input().split())))
+
+print(n)
+print(li)
