@@ -28,5 +28,8 @@
 # a, b = input().split()      정수 2개 입력받아 그대로 출력하기
 # print('%d %d' %(int(a), int(b)))
 
-# a, b = input().split()
+# a, b = input().split()        문자 2개 입력받아 순서 바꿔 출력하기
 # print(b, a)
+
+a = float(input())
+print('%.2f' %a)
