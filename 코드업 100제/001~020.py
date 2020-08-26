@@ -43,5 +43,5 @@
 # y, m, d = input().split('.')                        연월일 입력받아
 # print('%04d.%02d.%02d' %(int(y), int(m), int(d)))   그대로 출력하기
 
-
-
+a, b = input().split('-')       #주민번호 입력받아
+print(a+b)                      #형태 바꿔 출력하기
