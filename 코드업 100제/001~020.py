@@ -31,17 +31,22 @@
 # a, b = input().split()    문자 2개 입력받아
 # print(b, a)               순서 바꿔 출력하기
 
-# a = float(input())  실수 입력받아
-# print('%.2f' %a)    둘째 자리까지 출력하기
+# a = float(input())    실수 입력받아
+# print('%.2f' %a)      둘째 자리까지 출력하기
 
 # a = int(input())  정수 1개 입력받아
 # print(a, a, a)    3번 출력하기
 
+
 # h, m = map(int, input().split(':'))   시간 입력받아
-# print('%d:%d' %(h, m))                그대로 출력하기
+# print('%d:%d' %(h, m))                
+
+# t = input()                           그대로 출력하기
+# print(t)
+
 
 # y, m, d = map(int, input().split('.'))    연월일 입력받아
 # print('%04d.%02d.%02d' %(y, m, d))        그대로 출력하기
 
 # a, b = input().split('-')   주민번호 입력받아
-# print(a+b)                  형태 바꿔 출력하기
+# print(a + b)                형태 바꿔 출력하기
