@@ -31,8 +31,8 @@
 # a, b = input().split()    문자 2개 입력받아
 # print(b, a)               순서 바꿔 출력하기
 
-# a = float(input())    실수 입력받아
-# print('%.2f' %a)      둘째 자리까지 출력하기
+# a = float(input())  실수 입력받아
+# print('%.2f' %a)    둘째 자리까지 출력하기
 
 # a = int(input())  정수 1개 입력받아
 # print(a, a, a)    3번 출력하기
