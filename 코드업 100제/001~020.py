@@ -25,8 +25,8 @@
 # a = float(input())    실수 1개 입력받아
 # print(a)              그대로 출력하기
 
-# a, b = map(int, input().split())  정수 2개 입력받아
-# print('%d %d' %(a, b))            그대로 출력하기
+# a= input()  정수 2개 입력받아
+# print(a)    그대로 출력하기
 
 # a, b = input().split()    문자 2개 입력받아
 # print(b, a)               순서 바꿔 출력하기
@@ -43,5 +43,5 @@
 # y, m, d = map(int, input().split('.'))    연월일 입력받아
 # print('%04d.%02d.%02d' %(y, m, d))        그대로 출력하기
 
-a, b = input().split('-')   #주민번호 입력받아
-print(a+b)                  #형태 바꿔 출력하기
+# a, b = input().split('-')   주민번호 입력받아
+# print(a+b)                  형태 바꿔 출력하기
