@@ -16,37 +16,45 @@
 
 # print("\u250C\u252C\u2510\n\u251C\u253C\u2524\n\u2514\u2534\u2518")
 
-# a = int(input())  정수 1개 입력받아
-# print(a)          그대로 출력하기
+# 1010 정수 1개 입력받아 그대로 출력하기
+# a = int(input())
+# print(a)
 
-# a = input()   문자 1개 입력받아
-# print(a)      그대로 출력하기
+# 1011 문자 1개 입력받아 그대로 출력하기
+# a = str(input())
+# print(a)
 
-# a = float(input())    실수 1개 입력받아
-# print(a)              그대로 출력하기
+# 1012 실수 1개 입력받아 그대로 출력하기
+# a = float(input())
+# print(a)
 
-# a= input()  정수 2개 입력받아
-# print(a)    그대로 출력하기
+# 1013 정수 2개 입력받아 그대로 출력하기
+# a= input()
+# print(a)
 
-# a, b = input().split()    문자 2개 입력받아
-# print(b, a)               순서 바꿔 출력하기
+# 1014 문자 2개 입력받아 순서 바꿔 출력하기
+# a, b = input().split()
+# print(b, a)
 
-# a = float(input())    실수 입력받아
-# print('%.2f' %a)      둘째 자리까지 출력하기
+# 1015 실수 입력받아 둘째 자리까지 출력하기
+# a = float(input())
+# print('%.2f' %a)
 
-# a = int(input())  정수 1개 입력받아
-# print(a, a, a)    3번 출력하기
+# 1017 정수 1개 입력받아 3번 출력하기
+# a = int(input())
+# print(a, a, a)
 
+# 1018 시간 입력받아 그대로 출력하기
+# h, m = map(int, input().split(':'))
+# print('%d:%d' %(h, m))
 
-# h, m = map(int, input().split(':'))   시간 입력받아
-# print('%d:%d' %(h, m))                
-
-# t = input()                           그대로 출력하기
+# t = input()
 # print(t)
 
+# 1019 연월일 입력받아 그대로 출력하기
+# y, m, d = map(int, input().split('.'))
+# print('%04d.%02d.%02d' %(y, m, d))
 
-# y, m, d = map(int, input().split('.'))    연월일 입력받아
-# print('%04d.%02d.%02d' %(y, m, d))        그대로 출력하기
-
-# a, b = input().split('-')   주민번호 입력받아
-# print(a + b)                형태 바꿔 출력하기
+# 1020 주민번호 입력받아 형태 바꿔 출력하기
+# a, b = input().split('-')
+# print(a + b)
