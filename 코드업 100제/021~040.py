@@ -17,8 +17,16 @@
 # for i in a :              
 #     print("'" + i + "'")      나누어 출력하기
 
-# a = input()                 정수 1개 입력받아
+# 1025 정수 1개 입력받아 나누어 출력하기
+# a = input()                 
 # for i in range(len(a)):     
 #     x = int(a[i])
 #     n = (len(a)-i-1)
-#     print([x*(10**n)])      나누어 출력하기
+#     print([x*(10**n)])      
+
+# a, b, c, d, e = map(int, input()) 나누어 출력하기
+# print('[%d0000]\n[%d000]\n[%d00]\n[%d0]\n[%d]' % (a, b, c, d, e))
+
+
+a, b, c = map(int, input().split(':'))
+print(b)
