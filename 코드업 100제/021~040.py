@@ -13,11 +13,12 @@
 # for i in range(len(a)) :  
 #    print("'" + a[i] + "'")    단어 1개 입력받아
 
-
 # a = input()                   
 # for i in a :              
 #     print("'" + i + "'")      나누어 출력하기
 
-
-a, b = "1.414213".split('.')
-print(a + "\n" + b)
+# a = input()                 정수 1개 입력받아
+# for i in range(len(a)):     
+#     x = int(a[i])
+#     n = (len(a)-i-1)
+#     print([x*(10**n)])      나누어 출력하기
