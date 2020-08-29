@@ -23,22 +23,25 @@ for i in a :
     print("'" + i + "'")
 
 # 1025 : [기초-입출력] 정수 1개 입력받아 나누어 출력하기
-a = input()                 
-for i in range(len(a)):     
+a = input()
+for i in range(len(a)):
     x = int(a[i])
     n = (len(a)-i-1)
-    print([x*(10**n)])      
+    print([x*(10**n)])   
 
 a, b, c, d, e = map(int, input())
-print('[%d0000]\n[%d000]\n[%d00]\n[%d0]\n[%d]' % (a, b, c, d, e))
+print('[%d0000]\n[%d000]\n[%d00]\n[%d0]\n[%d]' %(a, b, c, d, e))
 
 # 1026 : [기초-입출력] 시분초 입력받아 분만 출력하기
 a, b, c = map(int, input().split(':'))
 print(b)
 
-# 1027 : [기초-입출력] 년월일 입력 받아 형식 바꿔 출력하기
+# 1027 : [기초-입출력] 년월일 입력받아 형식 바꿔 출력하기
 y, m, d = map(str, input().split("."))
 print(d + "-" + m + "-" + y)
+
+y, m, d = map(int, input().split('.'))
+print('%02d-%02d-%04d' %(d, m, y))
 
 # 1028 : [기초-데이터형] 정수 1개 입력받아 그대로 출력하기2
 a = input()
