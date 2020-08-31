@@ -75,3 +75,6 @@ print('%d' %a)
 a = int(input(), 16)
 print('%o' %a)
 
+# 1036 : [기초-출력변환] 영문자 1개 입력받아 10진수로 출력하기
+a = input()
+print(ord(a))
