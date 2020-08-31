@@ -67,3 +67,6 @@ print('%x' %a)
 a = int(input())
 print('%X' %a)
 
+# 1034 : [기초-출력변환] 8진 정수 1개 입력받아 10진수로 출력하기
+a = int(input(), 8)
+print('%d' %a)
