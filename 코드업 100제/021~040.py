@@ -82,3 +82,11 @@ print(ord(a))
 # 1037 : [기초-출력변환] 정수 입력받아 아스키 문자로 출력하기
 a = int(input())
 print(chr(a))
+
+# 1038 : [기초-산술연산] 정수 2개 입력받아 합 출력하기1
+a, b = map(int, input().split(" "))
+print(a + b)
+
+a, b = input().split(" ")
+print(int(a) + int(b))
+
