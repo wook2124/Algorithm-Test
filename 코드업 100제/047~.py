@@ -45,7 +45,6 @@ else:
     print(0)
 
 # 1053 : [기초-논리연산] 참 거짓 바꾸기
-# 1(true, 참) 또는 0(false, 거짓) 이 입력되었을 때 반대로 출력하는 프로그램을 작성해보자.
 a = int(input())
 if a == 1:
     print(0)
@@ -53,9 +52,15 @@ else:
     print(1)
 
 # 1054 : [기초-논리연산] 둘 다 참일 경우만 참 출력하기
-# 두 개의 참(1) 또는 거짓(0)이 입력될 때, 모두 참일 때에만 참을 출력하는 프로그램을 작성해보자.
 a, b = map(int, input().split(" "))
 if a & b == 1:
+    print(1)
+else:
+    print(0)
+
+# 1055 : [기초-논리연산] 하나라도 참이면 참 출력하기
+a, b = map(int, input().split(" "))
+if a | b == 1:
     print(1)
 else:
     print(0)
