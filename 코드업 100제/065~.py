@@ -125,3 +125,10 @@ for i in range(a):
 a = int(input())
 for i in range(a):
     print(a - i - 1)
+
+# 1076 : [기초-반복실행구조] 문자 1개 입력받아 알파벳 출력하기
+f = ord(input())  # f문자를 102 아스키 코드로 바꿔줌
+a = 97            # a문자는 97 아스키 코드 
+while(f + 1 > a): # 103 > 97, 즉 97(a) 98(b) 99(c) 100(d) 101(e) 102(f)까지 출력
+    print(chr(a), end=" ") # end=" "로 출력값마다 공백주기
+    a += 1
