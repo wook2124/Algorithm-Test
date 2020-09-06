@@ -105,3 +105,8 @@ print(a ^ b)
 # 1063 : [기초-삼항연산] 두 정수 입력받아 큰 수 출력하기
 a, b = map(int, input().split(" "))
 print(a if a > b else b)
+
+# 1064 : [기초-삼항연산] 정수 3개 입력받아 가장 작은 수 출력하기
+a, b, c = map(int, input().split(" ")) # 3, -1, 5
+m = a if a < b else b
+print(m if m < c else c)
