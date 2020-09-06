@@ -53,14 +53,14 @@ else:
 
 # 1054 : [기초-논리연산] 둘 다 참일 경우만 참 출력하기
 a, b = map(int, input().split(" "))
-if a & b == 1:
+if a == 1 and b == 1:
     print(1)
 else:
     print(0)
 
 # 1055 : [기초-논리연산] 하나라도 참이면 참 출력하기
 a, b = map(int, input().split(" "))
-if a | b == 1:
+if a ==1 or b == 1:
     print(1)
 else:
     print(0)
@@ -85,3 +85,5 @@ if a == 0 and b == 0:
     print(1)
 else:
     print(0)
+
+# 1059 : [기초-비트단위논리연산] 비트단위로 NOT 하여 출력하기
