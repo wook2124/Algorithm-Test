@@ -115,3 +115,8 @@ for i in num:
         break
     else:
         print(i)
+
+# 1074 : [기초-반복실행구조] 정수 1개 입력받아 카운트다운 출력하기1
+a = int(input())
+for i in range(a):
+    print(a - i)
