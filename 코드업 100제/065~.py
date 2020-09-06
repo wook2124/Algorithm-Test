@@ -106,3 +106,12 @@ n = int(input())
 a = list(map(int, input().split()))
 for i in a:
     print(i)
+
+# 1073 : [기초-반복실행구조] 0 입력될 때까지 무한 출력하기2
+a = input().split()
+num = list(map(int, a))
+for i in num:
+    if i == 0:
+        break
+    else:
+        print(i)
