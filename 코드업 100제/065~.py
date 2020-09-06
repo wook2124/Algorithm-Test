@@ -100,3 +100,9 @@ for i in a:
         exit()
     else: 
         print(i)
+
+# 1072 : [기초-반복실행구조] 정수 입력받아 계속 출력하기
+n = int(input())
+a = list(map(int, input().split()))
+for i in a:
+    print(i)
