@@ -84,3 +84,19 @@ elif a in(6, 7, 8):
     print("summer")
 else:
     print("fall")
+
+# 1071 : [기초-반복실행구조] 0 입력될 때까지 무한 출력하기1
+a = input().split()
+num = list(map(int, a))
+for i in num:
+    if i == 0:
+        break
+    else:
+        print(i)
+
+a = list(map(int, input().split()))
+for i in a:
+    if i == 0:
+        exit()
+    else: 
+        print(i)
