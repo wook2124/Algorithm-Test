@@ -33,4 +33,11 @@ a = str(input())
 b = int(a, 16)
 for i in range(1, 16):
     print("%s*%X=%X" %(a, i, b*i))
-    
+
+# 1083 : [기초-종합] 3 6 9 게임의 왕이 되자!
+a = int(input())
+for i in range(1, a + 1):
+    if i % 3 != 0:
+        print(i, end=" ")
+    else:
+        print("X", end=" ")
