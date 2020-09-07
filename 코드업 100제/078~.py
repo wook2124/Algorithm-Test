@@ -12,3 +12,12 @@ for i in a:
     print(i)
     if i == "q":
         break
+
+# 1080 : [기초-종합] 언제까지 더해야 할까?
+a = int(input())
+n = 0
+for i in range(a + 1):
+    n += i
+    if n >= a:
+        print(i)
+        break
