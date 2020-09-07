@@ -41,3 +41,13 @@ for i in range(1, a + 1):
         print(i, end=" ")
     else:
         print("X", end=" ")
+
+# 1084 : [기초-종합] 빛 섞어 색 만들기
+r, g, b = map(int, input().split(" "))
+cnt = 0
+for i in range(r):
+    for j in range(g):
+        for k in range(b):
+            cnt += 1
+            print(i, j, k)
+print(cnt)
