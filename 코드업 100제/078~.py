@@ -97,3 +97,10 @@ a, b, n = map(int, input().split(" "))
 for i in range(n - 1):
     a += b
 print(a)
+
+# 1090 : [기초-종합] 수 나열하기2
+# 시작 값(a), 등비의 값(r), 몇 번째 인지를 나타내는 정수(n)가 공백을 두고 입력된다.(모두 0 ~ 10)
+a, r, n = map(int, input().split(" "))
+for i in range(n - 1):
+    a *= r
+print(a)
