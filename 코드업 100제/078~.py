@@ -73,3 +73,12 @@ print("%.2f MB" %result)
 
 w, h, b = map(int, input().split(" "))
 print('%.2f MB' % (w * h * b / 1024 / 1024 / 8))
+
+# 1087 : [기초-종합] 여기까지! 이제 그만~
+a = int(input())
+sum = 0
+for i in range(1, a + 1):
+    sum += i
+    if sum >= a:
+        print(sum)
+        break
