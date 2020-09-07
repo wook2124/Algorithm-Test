@@ -58,7 +58,18 @@ print(cnt)
 h, b, c, s = map(int, input().split(" "))
 sum = h * b * c * s
 result = sum / (8 * (2 ** 20))
-print("%0.1f MB" %result)
+print("%.1f MB" %result)
 
 h, b, c, s = map(int, input().split(" "))
-print('%0.1f MB' % (h * b * c * s / 1024 / 1024 / 8))
+print('%.1f MB' % (h * b * c * s / 1024 / 1024 / 8))
+
+# 1086 : [기초-종합] 그림 파일 저장용량 계산하기
+# w, h, b 가 공백을 두고 입력된다.
+# 단, w, h는 모두 정수이고 1~1024 이다. b는 40이하의 4의 배수이다.
+w, h, b = map(int, input().split(" "))
+sum = w * h * b
+result = sum / (8 * (2 ** 20))
+print("%.2f MB" %result)
+
+w, h, b = map(int, input().split(" "))
+print('%.2f MB' % (w * h * b / 1024 / 1024 / 8))
