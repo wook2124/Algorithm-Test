@@ -82,3 +82,11 @@ for i in range(1, a + 1):
     if sum >= a:
         print(sum)
         break
+
+# 1088 : [기초-종합] 3의 배수는 통과?
+a = int(input())
+for i in range(1, a + 1):
+    if i % 3 != 0:
+        print(i, end=" ")
+    else:
+        continue
