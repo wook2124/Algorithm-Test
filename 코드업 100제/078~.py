@@ -27,3 +27,10 @@ n, m = map(int, input().split(" "))
 for i in range(1, n + 1):
     for j in range (1, m + 1):
         print(i, j)
+
+# 1082 : [기초-종합] 16진수 구구단?
+a = str(input())
+b = int(a, 16)
+for i in range(1, 16):
+    print("%s*%X=%X" %(a, i, b*i))
+    
