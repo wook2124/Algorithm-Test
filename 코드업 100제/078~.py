@@ -90,3 +90,10 @@ for i in range(1, a + 1):
         print(i, end=" ")
     else:
         continue
+
+# 1089 : [기초-종합] 수 나열하기1
+# 시작 값(a), 등차의 값(d), 몇 번째 수 인지를 의미하는 정수(n)가 공백을 두고 입력된다.(모두 0 ~ 100)
+a, b, n = map(int, input().split(" "))
+for i in range(n - 1):
+    a += b
+print(a)
