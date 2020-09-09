@@ -84,17 +84,17 @@ a = int(input())
 print(chr(a))
 
 # 1038 : [기초-산술연산] 정수 2개 입력받아 합 출력하기1
-a, b = map(int, input().split(" "))
+a, b = map(int, input().split())
 print(a + b)
 
-a, b = input().split(" ")
+a, b = input().split()
 print(int(a) + int(b))
 
 # 1039 : [기초-산술연산] 정수 2개 입력받아 합 출력하기2
-a, b = map(int, input().split(" "))
+a, b = map(int, input().split())
 print(a + b)
 
-a, b = input().split(" ")
+a, b = input().split()
 print(int(a) + int(b))
 
 # 1040 : [기초-산술연산] 정수 1개 입력받아 부호 바꿔 출력하기
@@ -106,11 +106,11 @@ a = input()
 print(chr(ord(a) + 1))
 
 # 1042 : [기초-산술연산] 정수 2개 입력받아 나눈 몫 출력하기
-a, b = map(int, input().split(" "))
+a, b = map(int, input().split())
 print(a // b)
 
 # 1043 : [기초-산술연산] 정수 2개 입력받아 나눈 나머지 출력하기
-a, b = map(int, input().split(" "))
+a, b = map(int, input().split())
 print(a % b)
 
 # 1044 : [기초-산술연산] 정수 1개 입력받아 1 더해 출력하기
@@ -118,7 +118,7 @@ a = int(input())
 print(a + 1)
 
 # 1045 : [기초-산술연산] 정수 2개 입력받아 자동 계산하기
-a, b = map(int, input().split(" "))
+a, b = map(int, input().split())
 print(a + b)
 print(a - b)
 print(a * b)
@@ -127,6 +127,6 @@ print(a % b)
 print('%0.2f' %(a / b))
 
 # 1046 : [기초-산술연산] 정수 3개 입력받아 합과 평균 출력하기
-a, b, c = map(int, input().split(" "))
+a, b, c = map(int, input().split())
 print(a + b + c)
 print('%0.1f' %((a + b + c)/3))
