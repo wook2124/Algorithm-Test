@@ -23,7 +23,9 @@ else:
     print("odd")
 
 # 1067 : [기초-조건/선택실행구조] 정수 1개 입력받아 분석하기
-# 정수 1개가 입력되었을 때, 음(minus)/양(plus)과 짝(even)/홀(odd)을 출력해보자.
+'''
+정수 1개가 입력되었을 때, 음(minus)/양(plus)과 짝(even)/홀(odd)을 출력해보자.
+'''
 a = int(input())
 if a < 0:
     print("minus")
@@ -35,11 +37,13 @@ else:
     print("odd")
 
 # 1068 : [기초-조건/선택실행구조] 정수 1개 입력받아 평가 출력하기
-# 점수 범위 : 평가
-# 90 ~ 100 : A
-# 70 ~   89 : B
-# 40 ~   69 : C
-#  0 ~   39 : D
+'''
+점수 범위 : 평가
+90 ~ 100 : A
+70 ~  89 : B
+40 ~  69 : C
+ 0 ~  39 : D
+ '''
 a = int(input())
 if a >= 90:
     print("A")
@@ -51,12 +55,14 @@ else:
     print("D")
 
 # 1069 : [기초-조건/선택실행구조] 평가 입력받아 다르게 출력하기
-# 평가 : 내용
-# A : best!!!
-# B : good!!
-# C : run!
-# D : slowly~
-# 나머지 문자들 : what?
+'''
+평가 : 내용
+A : best!!!
+B : good!!
+C : run!
+D : slowly~
+나머지 문자들 : what?
+'''
 a = input()
 if a == "A":
     print("best!!!")
@@ -70,11 +76,13 @@ else:
     print("what?")
 
 # 1070 : [기초-조건/선택실행구조] 월 입력받아 계절 출력하기
-# 월 : 계절 이름
-# 12, 1, 2 : winter
-#  3, 4, 5 : spring
-#  6, 7, 8 : summer
-#  9, 10, 11 : fall
+'''
+월 : 계절 이름
+12, 1, 2 : winter
+ 3, 4, 5 : spring
+ 6, 7, 8 : summer
+ 9, 10, 11 : fall
+'''
 a = int(input())
 if a in(12, 1, 2):
     print("winter")
