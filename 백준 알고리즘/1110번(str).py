@@ -1,13 +1,13 @@
-N = input()    # "26"
-n = N
+n = input()    # "26"
+num = n
 cnt = 0
 
 while 1:
-   if len(n) == 1:
-      n = "0" + n
-   plus = str(int(n[0]) + int(n[1]))   # 2 + 6 = "8"
-   n = n[-1] + plus[-1]    # "6" + "8" = "68"
+   if len(num) == 1:
+      num = "0" + num
+   plus = str(int(num[0]) + int(num[1]))   # 2 + 6 = "8"
+   num = num[-1] + plus[-1]    # "6" + "8" = "68"
    cnt += 1
-   if n == N:
+   if num == n:
       print(cnt)
       break
