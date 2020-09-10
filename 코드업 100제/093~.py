@@ -51,8 +51,8 @@ n은 10이하의 자연수이고 x, y 좌표는 1 ~ 19 까지이며, 같은 좌�
 '''
 # 바둑판 준비 1
 m = [
-    [0] * 19                        # [] * 19 = 가로로 19개
-    for i in range(19)              # range(19) = 세로로 19개
+    [0] * 19                        # [] * 19 = 가로(width)로 19개
+    for i in range(19)              # range(19) = 세로(cols)로 19개
 ]                                   # 0 ~ 18로 19개의 0이 가로, 세로로 생김
 
 # 바둑판 입력 1
@@ -97,8 +97,8 @@ for i in range(1, 20):           # i = 1 ~ 19
 '''
 # 바둑판 준비
 board = [
-    [0] * 20                        # [] * 20 = 가로로 20개
-    for j in range(20)              # range(20) = 세로로 20개
+    [0] * 20                        # [] * 20 = 가로(width)로 20개
+    for j in range(20)              # range(20) = 세로(cols)로 20개
 ]
 
 # 바둑판 입력
@@ -166,8 +166,8 @@ xy = list(map(int, input().split()))    # 5 5 입력, xy = [5, 5]
 
 # 바둑판 초기화
 board = [
-    [0] * xy[1]                     # [0] * 5 = 가로로 5개
-    for cols in range(xy[0])        # range(5) = 세로로 5개
+    [0] * xy[1]                     # [0] * 5 = 가로(width)로 5개
+    for cols in range(xy[0])        # range(5) = 세로(cols)로 5개
 ]
 
 # 막대개수
@@ -195,4 +195,59 @@ for i in range(repeat):             # i = 0 ~ 2
 for i in range(xy[0]):              # xy = [5, 5]
     for j in range(xy[1]):
         print(board[i][j], end = " ")
+    print()
+
+
+# 1099 : [기초-2차원배열] 성실한 개미
+'''
+10*10 크기의 미로 상자의 구조와 먹이의 위치가 입력된다.
+성실한 개미가 이동한 경로를 9로 표시해 출력한다.
+'''
+# 미로 준비
+maze = [
+    [0] * 10
+    for widths in range(10)
+]
+
+# 미로 입력
+for i in range(10):
+    maze[i] = list(map(int, input().split()))
+
+# 개미 집 위치
+startPoint = (1, 1)
+
+# 현재 좌표 및 울타리
+point = [0, 0]
+point[0] = startPoint[0]    # point[1, 0]
+point[1] = startPoint[1]    # point[1, 1]
+
+# 현재 상태
+status = 0
+while status != 2:      # maze에서 벗어나지 못하게함
+    # 확인
+    if maze[point[0]][point[1]] == 2:
+        status = 2
+        maze[point[0]][point[1]] = 9
+    else:
+        # 경로 표시
+        maze[point[0]][point[1]] = 9    # point[1][1] = 9
+
+        # 경로 이동
+        if maze[point[0]][point[1] + 1] != 1:
+            point[1] = point[1] + 1     # point[1, 2]
+        else:
+            point[0] = point[0] + 1     # point[2, 2]
+
+        # 테스트 케이스 유효성 검사
+        if point[0] > 8:
+            point[0] = 8
+            break
+        if point[1] > 8:
+            point = 8
+            break
+
+# 미로 출력
+for i in range(10):
+    for j in range(10):
+        print(maze[i][j], end = " ")
     print()
