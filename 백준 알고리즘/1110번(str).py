@@ -5,15 +5,15 @@
 위의 예는 4번만에 원래 수로 돌아올 수 있다. 따라서 26의 사이클의 길이는 4이다.
 N이 주어졌을 때, N의 사이클의 길이를 구하는 프로그램을 작성하시오.
 '''
-n = input()    # n = "26"
+n = input()                               # n = "26"
 num = n
 cnt = 0
 
 while 1:
    if len(num) == 1:
       num = "0" + num
-   plus = str(int(num[0]) + int(num[1]))   # 2 + 6 = "8"
-   num = num[-1] + plus[-1]    # "6" + "8" = "68"
+   plus = str(int(num[0]) + int(num[1]))  # 2 + 6 = "8"
+   num = num[-1] + plus[-1]               # "6" + "8" = "68"
    cnt += 1
    if num == n:
       print(cnt)
