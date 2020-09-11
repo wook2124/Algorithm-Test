@@ -20,14 +20,14 @@ def solution(v):
     answer = []
     v1 = []
     v2 = []
-    for i in v:             # v = [[1, 1], [2, 2], [1, 2]]
-        if i[0] not in v1:  # 1번째 i[0] = 1, 2번째 i[0] = 2, 3번째 i[0] = 1
+    for i in v:                 # v = [[1, 1], [2, 2], [1, 2]]
+        if i[0] not in v1:      # 1번째 i[0] = 1, 2번째 i[0] = 2, 3번째 i[0] = 1
             v1.append(i[0])
         else:
-            v1.remove(i[0]) # 중복된 1번째, 3번째 1을 remove함
-        if i[1] not in v2:  # 1번째 i[1] = 1, 2번째 i[1] = 2, 3번째 i[1] = 2
+            v1.remove(i[0])     # 중복된 1번째, 3번째 1을 remove함
+        if i[1] not in v2:      # 1번째 i[1] = 1, 2번째 i[1] = 2, 3번째 i[1] = 2
             v2.append(i[1])
         else:
-            v2.remove(i[1]) # 중복된 2번째, 3번째 2를 remove함
-    answer = v1 + v2        # 남아있는 v1 = [2]와 v2 = [1]을 더해줌
-    return answer           # [2, 1]
+            v2.remove(i[1])     # 중복된 2번째, 3번째 2를 remove함
+    answer = v1 + v2            # 남아있는 v1 = [2]와 v2 = [1]을 더해줌
+    return answer               # [2, 1]
