@@ -1,6 +1,4 @@
-while 1:
-    a, b = map(int, input().split())
-    if (a == 0 and b == 0):
-        break
-    else:
-        print(a + b)
+s = 'show how to index into sequences'.split()
+full_slice = s
+
+print(full_slice)
