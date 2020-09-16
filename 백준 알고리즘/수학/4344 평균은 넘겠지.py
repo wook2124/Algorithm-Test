@@ -1,6 +1,6 @@
 # 4344번 : 평균은 넘겠지
-c = int(input())
-avg = []
+c = int(input())            # 테스트 케이스 수
+avg = []                    # 점수의 평균
 
 for _ in range(c):
     n = list(map(int, input().split()))
@@ -13,7 +13,7 @@ for _ in range(c):
     for i in range(n[0]):   # sum / n[0] = 70
         if n[i + 1] > (sum / n[0]):
             cnt += 1
-            
+
     avg.append((cnt / n[0]) * 100)
     n.clear()               # 입력받는 n 리스트 초기화
 
