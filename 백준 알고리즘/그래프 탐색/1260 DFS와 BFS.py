@@ -26,7 +26,7 @@ visit = [0] * (n + 1)
 # [0, 0, 0, 0, 0]
 
 def dfs(v):
-    visit[v] = 1    #방문한 점 1로 표시
+    visit[v] = 1    # 방문한 점 1로 표시
     print(v, end = " ")
     for i in range(1, n + 1):
         if (visit[i] == 0) and (matrix[v][i] == 1):
