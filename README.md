@@ -1,6 +1,6 @@
 # Algorithm Test
 
-To study and practice algorithms for coding test
+To study and practice algorithms for `Coding Test`.
 
 ## Link
 
