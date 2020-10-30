@@ -8,4 +8,4 @@ for _ in range(n):
 s = sorted(ls)
 
 for i in s:
-    print(i)
+    print(i) 
