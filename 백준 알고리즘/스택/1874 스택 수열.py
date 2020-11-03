@@ -3,7 +3,7 @@ n = int(input())
 stack = []
 result = []
 count = 0
-X = True
+possible = True
 
 for _ in range(n):
     num = int(input())
@@ -13,14 +13,15 @@ for _ in range(n):
         stack.append(count)
         result.append("+")
 
-    if stack[-1] == num:
+    top = stack[-1]
+    if top == num:
         stack.pop()
         result.append("-")
     else:
-        X = False
+        possible = False
         break
 
-if X == False:
+if possible == False:
     print("NO")
 else:
     for i in result:
