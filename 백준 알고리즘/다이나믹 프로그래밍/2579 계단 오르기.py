@@ -31,4 +31,4 @@ def score(n):
         max_score[i] = steps[i] + max(steps[i - 1] + max_score[i - 3], max_score[i - 2])
 
 score(n)
-print(max_score[n - 1])
+print(max_score[n - 1]) 
