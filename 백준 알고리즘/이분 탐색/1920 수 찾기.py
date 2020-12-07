@@ -13,7 +13,7 @@ print(result)
 import sys
 
 n = int(sys.stdin.readline())
-N = set(map(int, sys.stdin.readline().split()))
+N = list(map(int, sys.stdin.readline().split()))
 m = int(sys.stdin.readline())
 M = list(map(int, sys.stdin.readline().split()))
 
