@@ -4,6 +4,8 @@ n = int(input())
 array = []
 for i in range(n):
     a, b = map(int, input().split())
-    array.append([a, b])
+    array.append([b, a])
 
-print(array)
+s_array = sorted(array)
+
+print(s_array)
