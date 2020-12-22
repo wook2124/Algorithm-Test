@@ -9,7 +9,7 @@ for _ in range(n):
 
 # sort_ls = sorted(ls) -> A-Z 순으로 정렬되서 오답
 
-ls.sort(key = lambda parameter_list: (parameter_list[0]))
+ls.sort(key = lambda parameter_list: parameter_list[0])
 
 """
 위 lambda식과 동일
