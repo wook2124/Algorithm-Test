@@ -18,7 +18,7 @@ ls안에 있는 것들이 parameter_list의 인수(argument)가 되어
 인덱스 [1]로 하면 name으로 정렬할 것임
 
 def ladmbda(parameter_list):
-    return(parameter_list[0])
+    return parameter_list[0]
 """
 
 for i in ls:
